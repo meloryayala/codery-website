@@ -1,13 +1,13 @@
 import Image from "next/image";
 import coderyLogo from "/public/codery-logo.svg";
 import Link from "next/link";
-import {menuLinks} from "@/constants/contants";
+import {menuLinks} from "@/constants/content";
 import {Button} from "@/components/ui/button";
 import {Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger} from "@/components/ui/sheet";
 import React from "react";
 import {MenuIcon} from "lucide-react";
 
-const Header = ({}) => {
+const Header = () => {
     return (
         <header>
             <div
