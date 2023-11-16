@@ -3,7 +3,7 @@ import arrows from "../../../public/arrows.svg";
 import stars from "../../../public/starts.svg";
 import {companies} from "@/constants/content";
 
-const Hero = ({}) => {
+const Hero = () => {
     return (
         <div>
             <h1 className="text-center text-4xl uppercase leading-relaxed lg:leading-snug md:text-6xl mx-[7%]">

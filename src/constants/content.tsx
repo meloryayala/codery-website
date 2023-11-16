@@ -63,3 +63,9 @@ export const companies= [
         technologies: ['Kotlin', 'Angular'],
     },
 ];
+
+export const stats = [
+    { label: "Clients", value: 10 },
+    { label: "Teams", value: 10 },
+    { label: "Successfull projects", value: 10 },
+];
