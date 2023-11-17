@@ -1,15 +1,15 @@
 import {BadgeEuro, FolderOpenDot, SquareCode} from "lucide-react";
-import vontobel from "/public/vontobel.jpg";
-import werbas from "/public/werbas.jpg";
-import baloise from "/public/baloise.jpg";
-import angular from "/public/angular.svg";
-import react from "/public/react.svg";
-import typescript from "/public/typescript.svg";
-import javascript from "/public/javascript.svg";
-import kotlin from "/public/kotlin.svg";
-import dotnet from "/public/dotnet.svg";
-import database from "/public/database.svg";
-import cypress from "/public/cypress.svg";
+import vontobel from "/public/images/vontobel.jpg";
+import werbas from "/public/images/werbas.jpg";
+import baloise from "/public/images/baloise.jpg";
+import angular from "/public/images/angular.svg";
+import react from "/public/images/react.svg";
+import typescript from "/public/images/typescript.svg";
+import javascript from "/public/images/javascript.svg";
+import kotlin from "/public/images/kotlin.svg";
+import dotnet from "/public/images/dotnet.svg";
+import database from "/public/images/database.svg";
+import cypress from "/public/images/cypress.svg";
 
 export const menuLinks = [
     { link: "Services", hash: "#services" , icon: <SquareCode /> },

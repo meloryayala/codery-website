@@ -1,11 +1,17 @@
 import Image from "next/image";
-import coderyLogo from "/public/codery-logo.svg";
+import coderyLogo from "/public/images/codery-logo.svg";
 import Link from "next/link";
 import {menuLinks} from "@/constants/data";
 import {Button} from "@/components/ui/button";
 import {Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger} from "@/components/ui/sheet";
 import React from "react";
 import {MenuIcon} from "lucide-react";
+import {
+    DropdownMenu,
+    DropdownMenuContent, DropdownMenuItem,
+    DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 
 const Header = () => {
     return (
@@ -19,17 +25,40 @@ const Header = () => {
                     width={0}
                     className="h-auto w-auto"
                 />
-                <div className="flex items-center space-x-8">
+
+                <ul className="flex items-center space-x-8">
                     {menuLinks.map(menuLink => (
-                        <ul key={menuLink.link}>
-                            <li>
-                                <Link href={menuLink.hash}>
-                                    {menuLink.link}
-                                </Link>
-                            </li>
-                        </ul>
+                        <li key={menuLink.link}>
+                            <Link href={menuLink.hash}>
+                                {menuLink.link}
+                            </Link>
+                        </li>
                     ))}
-                </div>
+                    <li>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger>
+                                <Avatar className="w-[35px] h-auto">
+                                    <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Switzerland_2-3.svg" />
+                                    <AvatarFallback>EN</AvatarFallback>
+                                </Avatar>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent>
+                                <DropdownMenuItem className="gap-3">
+                                    <Avatar className="w-[35px] h-auto">
+                                        <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" />
+                                        <AvatarFallback>EN</AvatarFallback>
+                                    </Avatar>
+                                    English
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </li>
+                    <li>
+                        <Button>
+                            Hire
+                        </Button>
+                    </li>
+                </ul>
             </div>
 
             <div
@@ -54,25 +83,24 @@ const Header = () => {
                             Menu
                         </SheetHeader>
 
-                        <div className="flex flex-col gap-y-4 mt-8">
+                        <ul className="flex flex-col gap-y-4 mt-8">
                             {menuLinks.map(menuLink => (
-                                <ul key={menuLink.link}>
-                                    <li>
-                                        <SheetClose>
-                                            <Link href={menuLink.hash}
-                                                  className=" flex gap-x-2"
-                                            >
-                                                {menuLink.icon}{menuLink.link}
-                                            </Link>
-                                        </SheetClose>
-                                    </li>
-                                </ul>
+                                <li key={menuLink.link}>
+                                    <SheetClose>
+                                        <Link href={menuLink.hash}
+                                              className=" flex gap-x-2"
+                                        >
+                                            {menuLink.icon}{menuLink.link}
+                                        </Link>
+                                    </SheetClose>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </SheetContent>
                 </Sheet>
             </div>
         </header>
     );
 };
+
 export default Header;

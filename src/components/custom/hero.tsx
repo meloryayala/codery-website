@@ -1,13 +1,13 @@
 import Image from "next/image";
-import arrows from "../../../public/arrows.svg";
-import stars from "../../../public/starts.svg";
+import arrows from "../../../public/images/arrows.svg";
+import stars from "../../../public/images/starts.svg";
 import {companies} from "@/constants/data";
 
 const Hero = () => {
     return (
         <div className="flex flex-col gap-40">
             <div className="flex justify-center">
-                <h1 className="text-center text-4xl uppercase leading-relaxed lg:leading-snug md:text-6xl mx-[7%] lg:max-w-5xl">
+                <h1 className="text-center text-4xl uppercase leading-relaxed lg:leading-relaxed md:text-6xl mx-[7%] lg:max-w-5xl">
                     Over
                     <div className="bg-indigo-400 rounded-lg inline mx-2 p-1">
                         <Image src={arrows} alt="Arrrows" className="inline h-10 w-auto"/>

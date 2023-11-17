@@ -1,5 +1,5 @@
 import Image from "next/image";
-import coderyLogo from "/public/codery-logo.svg"
+import coderyLogo from "/public/images/codery-logo.svg"
 import {LinkedinIcon, Mail} from "lucide-react";
 
 const Footer = () => {
