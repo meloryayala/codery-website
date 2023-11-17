@@ -1,7 +1,7 @@
 import Image from "next/image";
 import coderyLogo from "/public/codery-logo.svg";
 import Link from "next/link";
-import {menuLinks} from "@/constants/content";
+import {menuLinks} from "@/constants/data";
 import {Button} from "@/components/ui/button";
 import {Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger} from "@/components/ui/sheet";
 import React from "react";
@@ -44,8 +44,8 @@ const Header = () => {
 
                 <Sheet>
                     <SheetTrigger asChild>
-                        <Button size="icon" className="bg-background">
-                            <MenuIcon/>
+                        <Button size="icon" className="bg-background rounded-[10px]">
+                            <MenuIcon className="text-foreground"/>
                         </Button>
                     </SheetTrigger>
 

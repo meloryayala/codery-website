@@ -1,5 +1,5 @@
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {services} from "@/constants/content";
+import {services} from "@/constants/data";
 import Image from "next/image";
 
 

@@ -13,8 +13,8 @@ import cypress from "/public/cypress.svg";
 
 export const menuLinks = [
     { link: "Services", hash: "#services" , icon: <SquareCode /> },
-    { link: "Projects", hash: "#projects" , icon: <FolderOpenDot /> },
-    { link: "Pricing", hash: "#pricing" , icon: <BadgeEuro /> },
+    { link: "Projects", hash: "#projects" , icon: <FolderOpenDot /> }
+    // { link: "Pricing", hash: "#pricing" , icon: <BadgeEuro /> },
 ];
 
 export const services = [
@@ -66,6 +66,10 @@ export const companies= [
 
 export const stats = [
     { label: "Clients", value: 10 },
-    { label: "Teams", value: 10 },
-    { label: "Successfull projects", value: 10 },
+    { label: "Teams", value: 8 },
+    { label: "Successfull projects", value: 21 },
 ];
+
+export const price = {
+
+}

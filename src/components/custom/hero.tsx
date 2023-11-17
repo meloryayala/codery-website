@@ -1,7 +1,7 @@
 import Image from "next/image";
 import arrows from "../../../public/arrows.svg";
 import stars from "../../../public/starts.svg";
-import {companies} from "@/constants/content";
+import {companies} from "@/constants/data";
 
 const Hero = () => {
     return (
@@ -19,7 +19,7 @@ const Hero = () => {
                 development
             </h1>
 
-            <div className="mt-32">
+            <div className="mt-40">
                 <div className="flex gap-x-3 pl-[7%]">
                 {companies.map((company, index) => (
                     <div key={index} className="flex items-center rounded-lg overflow-hidden w-[130px] h-[100px]">
