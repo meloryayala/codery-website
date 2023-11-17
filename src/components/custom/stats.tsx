@@ -12,13 +12,13 @@ const Stats = () => {
             <div className="flex flex-col gap-7 lg:flex-row-reverse">
                 <div className="grid grid-cols-2 gap-6 lg:w-[50%]">
                     <Card className="bg-tertiary text-background font-semibold">
-                        <CardContent className="flex flex-col lg:flex-row items-center gap-x-4 py-7">
+                        <CardContent className="flex flex-col  items-center gap-x-4 py-7">
                             <p className="text-5xl font-bold">+ {stats[0].value}</p>
                             <p className="text-md lg:text-xl">{stats[0].label}</p>
                         </CardContent>
                     </Card>
                     <Card className="bg-tertiary text-background font-semibold">
-                        <CardContent className="flex flex-col lg:flex-row items-center gap-x-4 py-7">
+                        <CardContent className="flex flex-col items-center gap-x-4 py-7">
                             <p className="text-5xl font-bold">+ {stats[1].value}</p>
                             <p className="text-md lg:text-xl">{stats[1].label}</p>
                         </CardContent>
