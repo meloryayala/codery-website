@@ -7,12 +7,12 @@ import {Badge} from "@/components/ui/badge"
 
 const Projects = () => {
     return (
-        <div id="projects" className="flex flex-col gap-y-7">
-            <h3 className="text-center text-3xl">Latest projects</h3>
+        <div id="projects" className="flex flex-col gap-8 lg:gap-12">
+            <h3 className="text-center text-3xl lg:text-5xl">Latest projects</h3>
             <ScrollArea>
                 <div className="flex flex-row gap-6 pl-[3%]">
                     {companies.map((company, index) => (
-                        <Card key={index} className="px-[1%] py-7 w-[300px]">
+                        <Card key={index} className="px-[1%] py-7 w-[300px] lg:w-[500px]">
                             <CardHeader className="flex flex-col text-2xl gap-8">
                                 <div key={index}
                                      className="flex items-center rounded-lg overflow-hidden w-[130px] h-[100px]">
