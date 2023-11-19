@@ -2,7 +2,6 @@ import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {services} from "@/constants/data";
 import Image from "next/image";
 
-
 const Services = () => {
     return (
         <div id="services" className="flex flex-col justify-center mx-[7%] gap-8 lg:gap-12">

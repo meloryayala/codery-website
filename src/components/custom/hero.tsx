@@ -1,11 +1,15 @@
+"use client"
+
 import Image from "next/image";
 import arrows from "../../../public/images/arrows.svg";
 import stars from "../../../public/images/starts.svg";
 import {companies} from "@/constants/data";
+import { motion } from "framer-motion";
+
 
 const Hero = () => {
     return (
-        <div className="flex flex-col gap-40">
+        <div className="flex flex-col gap-28 lg:gap-40">
             <div className="flex justify-center">
                 <h1 className="text-center text-4xl uppercase leading-relaxed lg:leading-relaxed md:text-6xl mx-[7%] lg:max-w-5xl">
                     Over
@@ -22,9 +26,15 @@ const Hero = () => {
             </div>
 
 
-            <div className="flex gap-x-3 pl-[7%]">
+            <div className="relative overflow-hidden">
+            <motion.div
+                transition={{ duration: 4, from: 100,  ease: 'linear', repeat: Infinity }}
+                animate={{ x: -100 }}
+                className="flex gap-x-8 lg:gap-x-16 pl-[7%]">
                 {companies.map((company, index) => (
-                    <div key={index} className="flex items-center rounded-lg overflow-hidden w-[130px] h-[100px]">
+                    <motion.div
+                        key={index}
+                        className="flex items-center overflow-hidden rounded-lg w-[80px] h-[60px] lg:w-[130px] lg:h-[100px] shrink-0">
                         <Image
                             src={company.image}
                             alt={company.name + "logo"}
@@ -32,8 +42,9 @@ const Hero = () => {
                                 objectFit: "contain"
                             }}
                         />
-                    </div>
+                    </motion.div>
                 ))}
+            </motion.div>
             </div>
         </div>
     );

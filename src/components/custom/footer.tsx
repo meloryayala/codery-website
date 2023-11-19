@@ -4,7 +4,7 @@ import {LinkedinIcon, Mail} from "lucide-react";
 
 const Footer = () => {
     return (
-        <div className="flex flex-col lg:flex-row lg:justify-between bg-background-light px-[7%] py-[60px] gap-7 mt-32 rounded-t-lg text-foreground">
+        <div className="flex flex-col lg:flex-row lg:justify-between bg-background-light px-[7%] py-[60px] mt-32 lg:mt-56 rounded-t-lg text-foreground">
             <div className="flex flex-col gap-5">
                 <Image
                     src={coderyLogo}

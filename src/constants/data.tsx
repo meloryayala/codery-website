@@ -69,6 +69,34 @@ export const companies= [
         description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
         technologies: ['Kotlin', 'Angular'],
     },
+    {
+        image: vontobel,
+        name: 'Bank Vontobel',
+        period: 'July 2022 - Present',
+        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        technologies: ['Kotlin', 'Angular'],
+    },
+    {
+        image: werbas,
+        name: 'Werbas Holzgerlingen',
+        period: 'July 2022 - Present',
+        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        technologies: ['Angular', 'C#', 'Azure'],
+    },
+    {
+        image: baloise,
+        name: 'Basloise Versicherungen',
+        period: 'July 2022 - Present',
+        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        technologies: ['Kotlin', 'Angular'],
+    },
+    {
+        image: baloise,
+        name: 'Basloise Versicherungen',
+        period: 'July 2022 - Present',
+        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        technologies: ['Kotlin', 'Angular'],
+    },
 ];
 
 export const stats = [
