@@ -90,7 +90,7 @@ const Header = () => {
                         <ul className="flex flex-col gap-y-4 mt-8">
                             {menuLinks.map(menuLink => (
                                 <li key={menuLink.link}>
-                                    <SheetClose>
+                                    <SheetClose asChild>
                                         <Link href={menuLink.hash}
                                               className=" flex gap-x-2"
                                         >
