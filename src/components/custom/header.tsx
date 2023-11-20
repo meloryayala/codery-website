@@ -7,13 +7,9 @@ import {Button} from "@/components/ui/button";
 import {Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger} from "@/components/ui/sheet";
 import React from "react";
 import {MenuIcon} from "lucide-react";
-import {
-    DropdownMenu,
-    DropdownMenuContent, DropdownMenuItem,
-    DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
-import {menuLinks, cta} from "@/constants/deData";
+import {cta, emailContact, menuLinks} from "@/constants/deData";
 
 const Header = () => {
     return (
@@ -27,7 +23,10 @@ const Header = () => {
 
                 <ul className="flex items-center space-x-8">
                     {menuLinks.map(menuLink => (
-                        <li key={menuLink.link}>
+                        <li
+                            key={menuLink.link}
+                            className="hover:text-primary"
+                        >
                             <Link href={menuLink.hash}>
                                 {menuLink.link}
                             </Link>
@@ -37,26 +36,30 @@ const Header = () => {
                         <DropdownMenu>
                             <DropdownMenuTrigger>
                                 <Avatar className="w-[35px] h-auto">
-                                    <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Switzerland_2-3.svg" />
+                                    <AvatarImage
+                                        src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Switzerland_2-3.svg"/>
                                     <AvatarFallback>EN</AvatarFallback>
                                 </Avatar>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
                                 <Link href="">
-                                <DropdownMenuItem className="gap-3">
-                                    <Avatar className="w-[35px] h-auto">
-                                        <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" />
-                                        <AvatarFallback>EN</AvatarFallback>
-                                    </Avatar>
-                                    English
-                                </DropdownMenuItem>
+                                    <DropdownMenuItem className="gap-3">
+                                        <Avatar className="w-[35px] h-auto">
+                                            <AvatarImage
+                                                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg"/>
+                                            <AvatarFallback>EN</AvatarFallback>
+                                        </Avatar>
+                                        English
+                                    </DropdownMenuItem>
                                 </Link>
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </li>
                     <li>
                         <Button>
-                            {cta}
+                            <a href={`mailto:fabrice.manhart@codery.ch?subject=${emailContact.subject}&body=${emailContact.text}`}>
+                                {cta}
+                            </a>
                         </Button>
                     </li>
                 </ul>
