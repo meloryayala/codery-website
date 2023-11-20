@@ -1,7 +1,8 @@
+"use client"
+
 import Image from "next/image";
 import coderyLogo from "/public/images/codery-logo.svg";
 import Link from "next/link";
-import {menuLinks} from "@/constants/data";
 import {Button} from "@/components/ui/button";
 import {Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger} from "@/components/ui/sheet";
 import React from "react";
@@ -12,19 +13,16 @@ import {
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
-import {FC} from "react";
+import {menuLinks, cta} from "@/constants/deData";
 
 const Header = () => {
     return (
-        <header>
+        <header className="sticky top-5 z-10">
             <div
                 className="lg:flex justify-between bg-background-light py-5 px-[3%] mx-[7%] my-6 rounded-[24px] hidden">
                 <Image
                     src={coderyLogo}
                     alt="Codery logo"
-                    height={0}
-                    width={0}
-                    className="h-auto w-auto"
                 />
 
                 <ul className="flex items-center space-x-8">
@@ -35,7 +33,7 @@ const Header = () => {
                             </Link>
                         </li>
                     ))}
-                    <li>
+                    <li className="hidden">
                         <DropdownMenu>
                             <DropdownMenuTrigger>
                                 <Avatar className="w-[35px] h-auto">
@@ -44,21 +42,21 @@ const Header = () => {
                                 </Avatar>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
+                                <Link href="">
                                 <DropdownMenuItem className="gap-3">
-                                    <Link href="">
                                     <Avatar className="w-[35px] h-auto">
                                         <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" />
                                         <AvatarFallback>EN</AvatarFallback>
                                     </Avatar>
                                     English
-                                    </Link>
                                 </DropdownMenuItem>
+                                </Link>
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </li>
                     <li>
                         <Button>
-                            Hire
+                            {cta}
                         </Button>
                     </li>
                 </ul>
@@ -107,3 +105,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

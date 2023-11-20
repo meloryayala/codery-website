@@ -2,13 +2,14 @@
 
 import {ArrowUpRight} from "lucide-react";
 import {Card, CardContent, CardHeader} from "@/components/ui/card";
-import {stats} from "@/constants/data";
+import {stats} from "@/constants/enData";
 import React from "react";
+import {emailContact, sectionTitles} from "@/constants/deData";
 
 const Stats = () => {
     return (
         <div id="stats" className="flex flex-col gap-8 mx-[7%] lg:gap-12">
-            <h3 className="text-center text-3xl lg:text-5xl">Reference Of Quality</h3>
+            <h3 className="text-center text-3xl lg:text-5xl">{sectionTitles[2]}</h3>
             <div className="flex flex-col gap-7 lg:flex-row-reverse">
                 <div className="grid grid-cols-2 gap-6 lg:w-[50%]">
                     <Card className="bg-tertiary text-background font-semibold">
@@ -30,16 +31,14 @@ const Stats = () => {
                         </CardContent>
                     </Card>
                 </div>
-                <Card
-                    className="bg-primary text-background font-semibold lg:flex-grow"
-                    onClick={e => {
-                        window.location.href = 'mailto:example@email.com';
-                    }}
-                >
+                <Card className="bg-primary text-background font-semibold lg:flex-grow">
+                <a
+                    href={`mailto:fabrice.manhart@codery.ch?subject=${emailContact.subject}&body=${emailContact.text}`}>
                     <CardHeader className="flex flex-col justify-between lg:h-full py-7 lg:px-8">
                         <ArrowUpRight size={50} className="self-end"/>
                         <h4 className="text-2xl lg:text-4xl leading-relaxed">Find out how I can help your business</h4>
                     </CardHeader>
+                </a>
                 </Card>
             </div>
         </div>

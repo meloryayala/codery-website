@@ -1,6 +1,7 @@
 import Image from "next/image";
 import coderyLogo from "/public/images/codery-logo.svg"
 import {LinkedinIcon, Mail} from "lucide-react";
+import {footerText} from "@/constants/deData";
 
 const Footer = () => {
     return (
@@ -12,16 +13,16 @@ const Footer = () => {
                 />
 
                 <p className="text-xl text-foreground-light">
-                    Helping business to build sophisticated and scalable software products
+                    {footerText}
                 </p>
             </div>
 
             <div className="flex flex-col gap-8">
                 <div className="flex gap-8 lg:self-end">
-                    <a href="">
+                    <a href="https://www.linkedin.com/company/codery-gmbh">
                         <LinkedinIcon />
                     </a>
-                    <a href="">
+                    <a href="mailto:fabrice.manhart@codery.ch">
                         <Mail />
                     </a>
                 </div>

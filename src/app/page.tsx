@@ -3,17 +3,10 @@ import Services from "@/components/custom/services";
 import Stats from "@/components/custom/stats";
 import Projects from "@/components/custom/projects";
 import Pricing from "@/components/custom/pricing";
-import {FC} from "react";
 
-interface Props {
-    params: {
-        lng: string;
-    }
-}
-
-const Home: FC<Props> = ({ params: { lng } }) => {
+const Home= () => {
   return (
-      <div className="flex flex-col justify-center mt-40 gap-y-32 lg:gap-y-56 lg:mt-44">
+      <div className="flex flex-col justify-center mt-40 gap-y-32 lg:gap-y-56 lg:mt-36">
           <Hero />
           <Services />
           <Stats />

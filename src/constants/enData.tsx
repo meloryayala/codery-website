@@ -10,12 +10,23 @@ import kotlin from "/public/images/kotlin.svg";
 import dotnet from "/public/images/dotnet.svg";
 import database from "/public/images/database.svg";
 import cypress from "/public/images/cypress.svg";
+import zkb from "/public/images/zkb.png";
+
 
 export const menuLinks = [
     { link: "Services", hash: "#services" , icon: <SquareCode /> },
     { link: "Projects", hash: "#projects" , icon: <FolderOpenDot /> }
     // { link: "Pricing", hash: "#pricing" , icon: <BadgeEuro /> },
 ];
+
+export const cta = "Hire"
+
+export const sectionTitles = [
+    "Over 15 years of full stack development",
+    "Adding Value On",
+    "Reference Of Quality",
+    "Latest projects",
+]
 
 export const services = [
     {
@@ -45,57 +56,36 @@ export const companies= [
         image: vontobel,
         name: 'Bank Vontobel',
         period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        description: "Further development of internet banking. Implementation of stories in the frontend and backend. Integration of Avaloq components.",
         technologies: ['Kotlin', 'Angular'],
     },
     {
         image: werbas,
         name: 'Werbas Holzgerlingen',
         period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        description: "Realization of a SAAS application for workshop software. Designed for high availability and scalability on Azure.",
         technologies: ['Angular', 'C#', 'Azure'],
     },
     {
         image: baloise,
         name: 'Basloise Versicherungen',
         period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
+        description: "Renewal of the cost calculator for calculating the price of using the internal cloud computing platform.",
         technologies: ['Kotlin', 'Angular'],
     },
     {
-        image: baloise,
-        name: 'Basloise Versicherungen',
+        image: zkb,
+        name: 'Zürcher Kantonalbank',
         period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
-        technologies: ['Kotlin', 'Angular'],
+        description: "Renewal of the onboarding process for private and business customers. Design and implementation of auto identification.",
+        technologies: ['Kotlin', 'Angular', 'Camunda'],
     },
     {
-        image: vontobel,
-        name: 'Bank Vontobel',
+        image: zkb,
+        name: 'Zürcher Kantonalbank',
         period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
-        technologies: ['Kotlin', 'Angular'],
-    },
-    {
-        image: werbas,
-        name: 'Werbas Holzgerlingen',
-        period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
-        technologies: ['Angular', 'C#', 'Azure'],
-    },
-    {
-        image: baloise,
-        name: 'Basloise Versicherungen',
-        period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
-        technologies: ['Kotlin', 'Angular'],
-    },
-    {
-        image: baloise,
-        name: 'Basloise Versicherungen',
-        period: 'July 2022 - Present',
-        description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
-        technologies: ['Kotlin', 'Angular'],
+        description: "Design and implementation of a SPA portal solution for processing customer orders.",
+        technologies: ['Angular', '.NET/C#'],
     },
 ];
 
@@ -106,5 +96,13 @@ export const stats = [
 ];
 
 export const price = {
+    text: "",
+    value: 0,
+}
 
+export const footerText = "Helping business to build sophisticated and scalable software products"
+
+export const emailContact ={
+    subject: "Kontakt von Codery website",
+    text: "Hallo, Herr Manhart \n I would like to know more about your services."
 }

@@ -1,11 +1,12 @@
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {services} from "@/constants/data";
+import {services} from "@/constants/deData";
 import Image from "next/image";
+import {sectionTitles} from "@/constants/deData";
 
 const Services = () => {
     return (
         <div id="services" className="flex flex-col justify-center mx-[7%] gap-8 lg:gap-12">
-            <h3 className="text-center text-3xl lg:text-5xl">Adding Value On</h3>
+            <h3 className="text-center text-3xl lg:text-5xl">{sectionTitles[1]}</h3>
             {services.map((service, index) => (
                 <Card key={index} className="flex flex-col px-[3%] py-[4%] lg:px-[7%] lg:gap-8">
                     <CardHeader>
