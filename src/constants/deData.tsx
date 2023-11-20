@@ -55,35 +55,35 @@ export const companies= [
     {
         image: vontobel,
         name: 'Bank Vontobel',
-        period: 'July 2022 - Present',
+        period: 'Jul 2022 - Present',
         description: "Weiterentwicklung des Internetbankings. Umsetzung Stories im Frontend sowie im Backend. Integration von Avaloq Komponenten.",
         technologies: ['Kotlin', 'Angular'],
     },
     {
         image: werbas,
         name: 'Werbas Holzgerlingen',
-        period: 'July 2022 - Present',
+        period: 'Jan 2022 - Jul 2022',
         description: "Realisierung einer SAAS Applikation für Werkstattsoftware. Designed für Hochverfügbarkeit  und Skalierbarkeit auf Azure.",
         technologies: ['Angular', 'C#', 'Azure'],
     },
     {
         image: baloise,
         name: 'Basloise Versicherungen',
-        period: 'July 2022 - Present',
+        period: 'Nov 2021 - Dec 2021',
         description: "Erneuerung des Cost Calculators für die Preisberechnung der Nutzung der internen Cloud Computing Platform",
         technologies: ['Kotlin', 'Angular'],
     },
     {
         image: zkb,
         name: 'Zürcher Kantonalbank',
-        period: 'July 2022 - Present',
+        period: 'Jan 2021 - Nov 2021',
         description: "Erneuerung des Onboarding Prozesses für Privat- und Geschäftskunden. Design und Implementation Auto Identification.",
         technologies: ['Kotlin', 'Angular', 'Camunda'],
     },
     {
         image: zkb,
         name: 'Zürcher Kantonalbank',
-        period: 'July 2022 - Present',
+        period: 'Mai 2020 - Dec 2020',
         description: "Design und Realisierung einer SPA-Portal Lösung zur Abwicklung von Kundenaufträgen.",
         technologies: ['Angular', '.NET/C#'],
     },
@@ -94,6 +94,8 @@ export const stats = [
     { label: "Teams", value: 8 },
     { label: "Erfolgreiche Projekte", value: 21 },
 ];
+
+export const ctaEmail = "Finden Sie heraus, wie ich Ihrem Geschäft helfen kann"
 
 export const price = {
     text: "",

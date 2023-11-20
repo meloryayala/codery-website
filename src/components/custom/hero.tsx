@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className="flex flex-col gap-28 lg:gap-36">
             <div className="flex flex-col justify-center mx-[7%]">
-                <div className="bg-primary rounded-lg inline mx-2 p-1 self-center">
+                <div className="bg-primary rounded-lg mx-2 p-1 self-center hidden">
                     <Image src={arrows} alt="Arrrows" className="inline h-10 w-auto"/>
                 </div>
                 <h1 className="text-center text-4xl leading-relaxed lg:leading-relaxed md:text-6xl lg:max-w-5xl self-center">

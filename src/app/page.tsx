@@ -1,8 +1,8 @@
 import Hero from "@/components/custom/hero";
 import Services from "@/components/custom/services";
 import Stats from "@/components/custom/stats";
-import Projects from "@/components/custom/projects";
 import Pricing from "@/components/custom/pricing";
+import Projects from "@/components/custom/projects";
 
 const Home= () => {
   return (
