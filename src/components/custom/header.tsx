@@ -12,6 +12,7 @@ import {
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import {FC} from "react";
 
 const Header = () => {
     return (
@@ -44,11 +45,13 @@ const Header = () => {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
                                 <DropdownMenuItem className="gap-3">
+                                    <Link href="">
                                     <Avatar className="w-[35px] h-auto">
                                         <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" />
                                         <AvatarFallback>EN</AvatarFallback>
                                     </Avatar>
                                     English
+                                    </Link>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
